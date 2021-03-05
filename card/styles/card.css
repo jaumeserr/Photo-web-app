@@ -1,0 +1,44 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.card {
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  padding: 15px 15px 20px 15px;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__title {
+  margin-top: 25px;
+}
+
+.card__text {
+  padding: 15px 0;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.card__button {
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.card__button:hover {
+  background-color: #e8e8e8;
+}
+/*# sourceMappingURL=card.css.map */
