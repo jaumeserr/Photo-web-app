@@ -1,4 +1,8 @@
+@import './sass/colors';
 @import './sass/fonts';
+@import './sass/mixins';
+@import './sass/reset';
+@import './sass/vars';
 
 body {
     font-family: $primary-font;  
