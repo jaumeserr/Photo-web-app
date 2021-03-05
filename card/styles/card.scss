@@ -1,17 +1,16 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+@import './reset';
+@import './fonts.scss';
+@import './colors.scss';
 
 body {
     padding: 20px;
+    font-family: $primary-font;
 }
 
 .card {
-    border: 1px solid #e8e8e8;
+    border: 1px solid $lightgray-color;
     border-radius: 5px;
-    padding: 25px 15px;
+    padding: 15px 15px 20px 15px;
 }
 
 .card__image {
@@ -19,16 +18,23 @@ body {
 }
 
 .card__title {
-    margin-top: 30px;    
+    margin-top: 25px;
 }
 
 .card__text {
     padding: 15px 0;
+    font-size: $content-size;
+    line-height: $content-line_height;
 }
 
 .card__button {
-    background-color: white;
-    border: 1px solid #e8e8e8;
+    background-color: $white-color;
+    border: 1px solid $lightgray-color;
     border-radius: 5px;
     padding: 10px 15px;
+    cursor: pointer;
+}
+
+.card__button:hover {
+    background-color: $lightgray-color;
 }
