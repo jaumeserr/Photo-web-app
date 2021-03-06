@@ -1,0 +1,16 @@
+@import '../../../styles/sass/colors';
+@import '../../../styles/sass/fonts';
+@import '../../../styles/sass/mixins';
+@import '../../../styles/sass/reset';
+@import '../../../styles/sass/vars';
+@import '../../../styles/sass/wrapper';
+
+.heading {
+    background-color: $green-color;
+    
+    &__title {
+        color: $white-color;
+        font-size: 40px;
+        padding: 20px 0 10px;
+    }
+}

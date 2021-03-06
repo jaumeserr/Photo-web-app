@@ -1,11 +1,23 @@
 .footer {
     background-color: $gray-color;
     color: $white-color;
-    @include flex(flex, column, center, center, center);
-    padding: 20px;
-    
+    padding: 20px 0;
+
+    &__wrapper {
+        @include media(mobile) {
+            @include flex(flex, column, center, center, center);
+        }
+        @include media(tablet) {
+            @include flex(flex, column, center, center, center);
+        }
+        @include media(desktop) {
+            @include flex(flex, row, space-between, center, center);
+        }
+    }    
+        
     &__menu {
-        @include flex(flex, row, center, center, center);
+        display: flex;
+        flex-direction: row;
         
         &__item {
             padding: 0 7px;
