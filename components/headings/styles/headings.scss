@@ -1,9 +1,7 @@
-@import '../../../styles/sass/colors';
-@import '../../../styles/sass/fonts';
-@import '../../../styles/sass/mixins';
-@import '../../../styles/sass/reset';
-@import '../../../styles/sass/vars';
-@import '../../../styles/sass/wrapper';
+@import '../../../styles/sass/global/colors';
+@import '../../../styles/sass/global/mixins';
+@import '../../../styles/sass/global/reset';
+@import '../../../styles/sass/global/vars';
 
 .heading {
     background-color: $green-color;
