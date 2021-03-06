@@ -1,0 +1,18 @@
+@import './mixins';
+
+.wrapper {
+    width: 85%;
+    
+    @include media(mobile) {
+        @include flex(flex, column, center, center, center)
+    }
+    
+    @include media(tablet) {
+        @include flex(flex, column, center, center, center)
+    }
+    
+    @include media(desktop) {
+        @include flex(flex, row, space-around, center, center);
+        max-width: 1200px;
+    }
+}
