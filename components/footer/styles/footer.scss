@@ -1,18 +1,29 @@
-@import '../../../styles/sass/colors';
-@import '../../../styles/sass/fonts';
-@import '../../../styles/sass/mixins';
-@import '../../../styles/sass/reset';
-@import '../../../styles/sass/vars';
+@import '../../../styles/sass/global/colors';
+@import '../../../styles/sass/global/mixins';
+@import '../../../styles/sass/global/reset';
+@import '../../../styles/sass/global/vars';
+@import '../../../styles/sass/global/wrapper';
 
 .footer {
     background-color: $gray-color;
     color: $white-color;
-    @include flex(flex, column, center, center, center);
-    padding: 20px;
-    
+    padding: 20px 0;
+
+    &__wrapper {
+        @include media(mobile) {
+            @include flex(flex, column, center, center, center);
+        }
+        @include media(tablet) {
+            @include flex(flex, column, center, center, center);
+        }
+        @include media(desktop) {
+            @include flex(flex, row, space-between, center, center);
+        }
+    }    
+        
     &__menu {
-        @include flex(flex, row, center, center, center);
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
         
         &__item {
             padding: 0 7px;
@@ -21,16 +32,9 @@
     
     &__trademark {
         padding-top: 20px;
-    }
-}
 
-@media all and (min-width: $desktop-size) {
-    .footer {
-        @include flex(flex, row, space-around, center, center);
-        
-        &__trademark {
+        @include media(desktop) {
             padding-top: 0;
-            
         }
     }
 }
