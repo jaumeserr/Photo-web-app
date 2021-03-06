@@ -1,0 +1,39 @@
+@import '../../../styles/sass/colors';
+@import '../../../styles/sass/fonts';
+@import '../../../styles/sass/mixins';
+@import '../../../styles/sass/reset';
+@import '../../../styles/sass/vars';
+
+.features {
+    background-color: $green-color;
+    color: $white-color;
+    @include flex(flex, column, center, center, left);
+    padding: 40px 20px 20px;
+    font-size: 18px;
+
+    @include media(tablet) {
+        @include flex(flex, column, center, flex-start, left);
+        padding: 30px 40px 20px 40px;
+    }
+
+    @include media(desktop) {
+        @include flex(flex, row, space-around, center, left);
+        padding: 20px;  
+    }
+
+    &__title {
+        font-size: 30px;
+    }
+
+    &__points {
+        padding: 10px 0;
+
+        &__item {
+            padding: 5px 0;
+            &::before {
+                content: "✓";
+                margin-right: 5px;
+            }
+        }
+    }
+}
