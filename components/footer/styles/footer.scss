@@ -1,7 +1,8 @@
-@import './reset';
-@import './colors';
-@import './mixins';
-@import './vars';
+@import '../../../styles/sass/colors';
+@import '../../../styles/sass/fonts';
+@import '../../../styles/sass/mixins';
+@import '../../../styles/sass/reset';
+@import '../../../styles/sass/vars';
 
 .footer {
     background-color: $gray-color;
