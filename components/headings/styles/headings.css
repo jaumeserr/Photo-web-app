@@ -1,0 +1,38 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.heading {
+  background-color: #00B09B;
+}
+
+.heading__title {
+  color: #fff;
+  font-size: 40px;
+  padding: 20px 0 5px;
+}
+
+.wrapper {
+  padding: 0 20px;
+}
+
+@media all and (min-width: 1200px) {
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=headings.css.map */

@@ -1,0 +1,29 @@
+@import '../../../styles/sass/colors';
+@import '../../../styles/sass/fonts';
+@import '../../../styles/sass/mixins';
+@import '../../../styles/sass/reset';
+@import '../../../styles/sass/vars';
+
+.heading {
+    background-color: $green-color;
+    
+    &__title {
+        color: $white-color;
+        font-size: 40px;
+        padding: 20px 0 5px;
+    }
+}
+
+.wrapper {
+    padding: 0 20px;
+    
+    @media all and (min-width: $desktop-size) {
+       width: $desktop-size;
+       margin: 0 auto;
+    }
+
+    @media all and (max-width: $tablet-size) {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
