@@ -22,23 +22,20 @@
   color: inherit;
 }
 
-.card {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e8e8e8;
-  border-radius: 5px;
-  padding: 15px 15px 20px 15px;
+.wrapper {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid white;
 }
 
-.card__image {
-  width: 100%;
+.heading {
+  background-color: #00B09B;
 }
 
-.card__title {
-  margin-top: 25px;
+.heading__title {
+  color: #fff;
+  font-size: 40px;
+  padding: 20px 0 10px;
 }
-
-.card__text {
-  padding: 15px 0;
-}
-/*# sourceMappingURL=card.css.map */
+/*# sourceMappingURL=headings.css.map */

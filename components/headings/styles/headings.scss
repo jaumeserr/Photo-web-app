@@ -4,21 +4,14 @@
 @import '../../../styles/sass/global/mixins';
 @import '../../../styles/sass/global/reset';
 @import '../../../styles/sass/global/vars';
+@import '../../../styles/sass/global/wrapper';
 
-.card {
-    @include border(1px, solid, $lightgray-color);
-    border-radius: 5px;
-    padding: 15px 15px 20px 15px;
-
-    &__image {
-        width: 100%;
-    }
-
+.heading {
+    background-color: $green-color;
+    
     &__title {
-        margin-top: 25px;
+        color: $white-color;
+        font-size: 40px;
+        padding: 20px 0 10px;
     }
-
-    &__text {
-        padding: 15px 0;
-    }    
 }
