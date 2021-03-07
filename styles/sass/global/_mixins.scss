@@ -8,6 +8,12 @@
     text-align: $text-align;
 }
 
+@mixin border($width, $style, $color) {
+    border-width: $width;
+    border-style: $style;
+    border-color: $color;
+}
+
 @mixin media($media) {
     @if $media == mobile {
         @media (max-width: $tablet-size) {

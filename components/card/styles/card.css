@@ -1,0 +1,44 @@
+.button {
+  background-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e8e8e8;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #e8e8e8;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e8e8e8;
+  border-radius: 5px;
+  padding: 15px 15px 20px 15px;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__title {
+  margin-top: 25px;
+}
+
+.card__text {
+  padding: 15px 0;
+}
+/*# sourceMappingURL=card.css.map */
