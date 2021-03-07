@@ -9,23 +9,16 @@
   color: inherit;
 }
 
+.wrapper {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid white;
+}
+
 .features {
   background-color: #00B09B;
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: left;
   padding: 40px 0 20px;
   font-size: 18px;
 }
