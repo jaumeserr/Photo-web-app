@@ -3,8 +3,8 @@
 @import './sass/global/mixins';
 @import './sass/global/reset';
 @import './sass/global/wrapper';
-@import './sass/components/footer';
-@import './sass/components/heading';
+
+@import './sass/components/features';
 
 body {
     font-family: $primary-font;  
