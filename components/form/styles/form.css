@@ -1,6 +1,6 @@
 .button {
   background-color: #fff;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
   border-color: #e8e8e8;
   border-radius: 5px;
@@ -10,6 +10,9 @@
 
 .button:hover {
   background-color: #e8e8e8;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #00B09B;
 }
 
 * {
@@ -26,63 +29,6 @@
   width: 85%;
   max-width: 1200px;
   margin: 0 auto;
-  border: 1px solid white;
-}
-
-@media (max-width: 768px) {
-  .wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: left;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1200px) {
-  .wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: left;
-  }
-}
-
-@media (min-width: 1200px) {
-  .wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: left;
-  }
 }
 
 .form {

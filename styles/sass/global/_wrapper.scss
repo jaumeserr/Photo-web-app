@@ -4,16 +4,5 @@
     width: 85%;
     max-width: 1200px;
     margin: 0 auto;
-    border: 1px solid white;
-
-    @include media(mobile) {
-        @include flex(flex, column, center, center, left);
-    }
-    @include media(tablet) {
-        @include flex(flex, column, center, center, left);
-    }
-    @include media(desktop) {
-        @include flex(flex, row, space-around, center, left);
-    }
 }
 

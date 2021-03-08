@@ -1,0 +1,27 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    &__label {
+        padding-bottom: 10px;
+        font-weight: bold;
+    }
+
+    &__input, &__textarea {
+        @include border(1px, solid, $lightgray-color);
+        padding: 10px;
+        color: $lightgray2-color;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        font-family: inherit;
+
+        &::placeholder {
+            color: $lightgray2-color;
+        }
+    }
+}
+
+.button {
+    width: max-content;
+}

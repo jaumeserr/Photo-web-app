@@ -10,6 +10,9 @@
 
 .button:hover {
   background-color: #e8e8e8;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #00B09B;
 }
 
 * {
@@ -26,7 +29,6 @@
   width: 85%;
   max-width: 1200px;
   margin: 0 auto;
-  border: 1px solid white;
 }
 
 .heading {

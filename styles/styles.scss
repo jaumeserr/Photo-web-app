@@ -1,9 +1,66 @@
+@import './sass/global/button';
 @import './sass/global/colors';
 @import './sass/global/fonts';
 @import './sass/global/mixins';
 @import './sass/global/reset';
+@import './sass/global/vars';
 @import './sass/global/wrapper';
+
+@import './sass/components/footer';
+@import './sass/components/features';
+@import './sass/components/headings';
+@import './sass/components/card';
+@import './sass/components/form';
 
 body {
     font-family: $primary-font;  
+}
+
+.content-cards {
+    padding: 30px 0;
+
+    @include media(tablet) {
+        @include flex(flex, row, center, center, center)
+    }
+}
+
+.middle {
+    padding: 30px 0;
+
+    &__wrapper {
+        @include media(mobile) {
+            @include flex(flex, column, center, stretch, left);
+        }
+        @include media(tablet) {
+            @include flex(flex, column, center, stretch, left);
+        }
+        @include media(desktop) {
+            @include flex(flex, row, space-around, flex-start, left);
+        }
+    }
+
+    &__left {
+        display: flex;
+        flex-grow: 2;
+
+        @include media(desktop) {
+            margin-right: 30px;
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex: 1;
+    }
+
+    &__card {
+        @include media(tablet) {
+            margin: 20px 0;
+        }
+
+        @include media(mobile) {
+            margin: 20px 0;
+        }
+    }
+    
 }

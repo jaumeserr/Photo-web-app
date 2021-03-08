@@ -1,0 +1,39 @@
+.card {
+    @include border(1px, solid, $lightgray-color);
+    border-radius: 5px;
+    padding: 15px 15px 20px 15px;
+
+    &:nth-child(2) {
+        margin: 0 20px;
+
+        @include media(mobile) {
+            margin: 20px 0;
+        }
+
+        @include media(tablet) {
+            margin: 20px 0;
+        }
+    }
+
+    &__image {
+        width: 100%;
+
+        @include media(mobile) {
+            height: auto;
+            width: 100%;
+        }
+
+        @include media(tablet) {
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    &__title {
+        margin-top: 25px;
+    }
+
+    &__text {
+        padding: 15px 0;
+    }    
+}

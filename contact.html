@@ -5,8 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Web App - Contact</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <nav>
+        Menu
+    </nav>
+    <section class="heading">
+        <div class="wrapper">
+            <h2 class="heading__title">Contact Us</h2>
+        </div>
+    </section>
+    <section class="middle">
+        <div class="wrapper middle__wrapper">
+            <div class="middle__left">
+                <form class="form">
+                    <label class="form__label" for="name">Name</label>
+                    <input class="form__input" type="text" id="name" placeholder="Enter name" />
+                    <label class="form__label" for="company">Company name</label>
+                    <input class="form__input" type="text" id="company" placeholder="Enter company name" />
+                    <label class="form__label" for="email">Email address</label>
+                    <input class="form__input" type="email" id="email" placeholder="Enter Email" />
+                    <label class="form__label" for="message">Message</label>
+                    <textarea class="form__textarea" id="message" placeholder="Enter Message"></textarea>
+                    <button class="button">Submit</button>
+                </form>
+            </div>
+            <div class="middle__right">
+                <div class="card middle__card">
+                    <figure>
+                        <img class="card__image" src="../../assets/demo1.png">
+                    </figure>
+                    <div>
+                        <h3 class="card__title">Lorem Ipsum</h3>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione recusandae laboriosam debitis ipsum incidunt cumque magni modi omnis aperiam ut, itaque sit sint obcaecati necessitatibus nostrum, reprehenderit distinctio quibusdam! Sequi.</p>
+                        <button class="button">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
+    <section class="features">
+        <div class="wrapper features__wrapper">
+            <div class="features__list">
+                <h2 class="features__title">Gamma Features</h2>
+                <ul class="features__points">
+                    <li class="features__points__item">harlatanistic</li>
+                    <li class="features__points__item">unembattled</li>
+                    <li class="features__points__item">bleekbok</li>
+                    <li class="features__points__item">overtipple</li>
+                    <li class="features__points__item">empathically</li>
+                </ul>
+            </div>
+            <img class="features__logo" src="./assets/logo.png">
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="wrapper footer__wrapper">
+            <ul class="footer__menu">
+                <li class="footer__menu__item"><a href="#">Home</a></li>
+                <li class="footer__menu__item"><a href="#">About</a></li>
+                <li class="footer__menu__item"><a href="#">Contact</a></li>
+                <li class="footer__menu__item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="footer__trademark">Privacy Policy &#64; 2021, All Rights Reserved</p>
+        </div>
+    </footer>
 </body>
 </html>
