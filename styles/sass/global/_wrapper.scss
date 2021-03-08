@@ -15,6 +15,5 @@
     @include media(desktop) {
         @include flex(flex, row, space-around, center, left);
     }
-
 }
 
