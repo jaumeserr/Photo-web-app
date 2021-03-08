@@ -1,0 +1,14 @@
+@import './colors';
+@import './mixins';
+
+.button {
+    background-color: $white-color;
+    @include border(2px, solid, $lightgray-color);
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $lightgray-color;
+    }
+}
