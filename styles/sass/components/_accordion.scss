@@ -1,0 +1,56 @@
+.accordionMenu {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.accordionMenu input[type="radio"] {
+    display: none;
+}
+
+.accordionMenu label {
+    display: block;
+    height: 50px;
+    background-color: red;
+    line-height: 50px;
+    padding: 0 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordionMenu label::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 10px;
+    border-style: solid;
+    border-width: 5px 0 5px 10px;
+    border-color: transparent transparent transparent #fff;
+    top: 20px;
+    z-index: 10;
+    transition: all 0.3 ease-in-out;
+}
+
+.accordionMenu .content {
+    max-height: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 2s ease-in-out;
+}
+
+.accordionMenu .content .inner {
+    background: yellow;
+}
+
+.accordionMenu input[type="radio"]:checked + label:after {
+    transform: rotate(90deg);
+    transition: all 0.2s ease-in-out;
+}
+
+.accordionMenu input[type="radio"]:checked + .content {
+    max-height: 2000px;
+    height: auto;
+}
+
+
