@@ -16,51 +16,45 @@ body {
     font-family: $primary-font;  
 }
 
-.content-cards {
+.contact {
+    display: flex;
+    flex-direction: column;
     padding: 30px 0;
+    @include flex(flex, column, center, stretch, left);
+    
+    @include media(desktop) {
+        @include flex(flex, row, space-around, flex-start, left);
+    }
 
     @include media(tablet) {
-        @include flex(flex, row, center, center, center)
-    }
-}
-
-.middle {
-    padding: 30px 0;
-
-    &__wrapper {
-        @include media(mobile) {
-            @include flex(flex, column, center, stretch, left);
-        }
-        @include media(tablet) {
-            @include flex(flex, column, center, stretch, left);
-        }
-        @include media(desktop) {
-            @include flex(flex, row, space-around, flex-start, left);
-        }
+        @include flex(flex, row, space-around, flex-start, left);
     }
 
-    &__left {
-        display: flex;
-        flex-grow: 2;
-
-        @include media(desktop) {
-            margin-right: 30px;
-        }
-    }
-
-    &__right {
-        display: flex;
-        flex: 1;
+    &__form {
+        padding-bottom: 30px;
+        flex-grow:6;
     }
 
     &__card {
-        @include media(tablet) {
-            margin: 20px 0;
-        }
-
-        @include media(mobile) {
-            margin: 20px 0;
-        }
+        flex-grow: 1;
     }
-    
+
+    .card {
+        margin: 0px;
+    }
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+
+    @include media(desktop) {
+        @include flex(flex, row, space-between, flex-start, left);
+    }
+
+    @include media(tablet) {
+        @include flex(flex, row, space-between, flex-start, left);
+        flex-wrap: wrap;
+    }
 }
