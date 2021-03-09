@@ -59,3 +59,19 @@ body {
         flex-wrap: wrap;
     }
 }
+
+.about {
+    display: flex;
+    padding: 30px 0;
+    
+}
+
+.left {
+    flex: 3;
+    
+}
+.right {
+    margin-left: 30px;
+    flex: 1;
+    background-color: red;
+}

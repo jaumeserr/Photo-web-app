@@ -1,56 +1,64 @@
-.accordionMenu {
-    width: 500px;
-    margin: 0 auto;
-}
-
-.accordionMenu input[type="radio"] {
-    display: none;
-}
-
-.accordionMenu label {
+.accordion {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .accordion__label,
+  .accordion__content {
+    padding: 14px 20px;
+  }
+  
+  .accordion__label {
     display: block;
-    height: 50px;
-    background-color: red;
-    line-height: 50px;
-    padding: 0 10px;
-    position: relative;
+    color: #333;
     cursor: pointer;
-}
-
-.accordionMenu label::after {
-    display: block;
+    position: relative;
+    background: #f3f3f3;
+    border:1px solid #e7e7e7;
+    margin-top: 4px;
+    border-radius: 5px;
+  }
+  
+  .accordion__label:hover {
+    background-color: #e8e8e850;
+  }
+  
+  .accordion__label::after {
     content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
     width: 0;
     height: 0;
-    position: absolute;
-    right: 10px;
     border-style: solid;
     border-width: 5px 0 5px 10px;
-    border-color: transparent transparent transparent #fff;
-    top: 20px;
-    z-index: 10;
-    transition: all 0.3 ease-in-out;
-}
-
-.accordionMenu .content {
-    max-height: 0;
-    height: 0;
-    overflow: hidden;
-    transition: all 2s ease-in-out;
-}
-
-.accordionMenu .content .inner {
-    background: yellow;
-}
-
-.accordionMenu input[type="radio"]:checked + label:after {
-    transform: rotate(90deg);
+    border-color: transparent transparent transparent #333;
     transition: all 0.2s ease-in-out;
-}
+  }
+  
+  .accordion__content {
+    background: #ffffff;
+    display: none;
+    border:1px solid #e7e7e7;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .accordion__input {
+    display: none;
+  }
+  
+  .accordion__input:checked ~ .accordion__content {
+    display: block;
+  }
+  
+  .accordion__input:checked ~ .accordion__label::after {
+    transform: translateY(-50%) rotate(90deg);
+  }
 
-.accordionMenu input[type="radio"]:checked + .content {
-    max-height: 2000px;
-    height: auto;
-}
-
-
+  .accordion__input:checked ~ .accordion__label {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
