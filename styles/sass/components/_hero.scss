@@ -1,0 +1,57 @@
+.hero {
+    background-image: url(../../../assets/site_showcase_bg.jpg);
+    color: $white-color;
+
+    &__container {
+        padding: 100px 0;
+        @include media(desktop) {
+            @include flex(flex, row, space-around, center, left);
+            padding: 40px 0 0 0;
+        }
+    }
+
+    &__info {
+        text-align: center;
+        @include media(desktop) {
+            @include flex(flex, column, space-around, flex-start, left);
+        }
+        &__title {
+            font-size: 50px;
+            &--green {
+                color: $green-color;
+            }
+        }
+        &__text {
+            padding: 30px 0;
+            line-height: 1.5;
+            @include media(tablet) {
+                font-size: 20px;
+            }
+            @include media(desktop) {
+                font-size: 22px;
+                text-align: left;
+            }
+        }
+        &__apps {
+            @include media(mobile) {
+                @include flex(flex, column, space-between, center, center);
+            }
+            @include media(tablet) {
+                @include flex(flex, row, space-between, center, center);
+            }
+            img {
+                padding: 8px;
+                @include media(desktop) {
+                    padding: 0 15px 0 0;
+                }
+            }
+        }
+    }
+
+    &__image {
+        display: none;
+        @include media(desktop) {
+            display: flex;
+        }
+    }
+}

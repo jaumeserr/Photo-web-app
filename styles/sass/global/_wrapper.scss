@@ -1,17 +1,7 @@
 @import './mixins';
 
 .wrapper {
-    width: 85%;
+    width: 80%;
     max-width: 1200px;
     margin: 0 auto;
-
-    @include media(mobile) {
-        @include flex(flex, column, center, center, left);
-    }
-    @include media(tablet) {
-        @include flex(flex, row, space-around, center, left);
-    }
-    @include media(desktop) {
-        @include flex(flex, row, space-around, center, left);
-    }
 }
