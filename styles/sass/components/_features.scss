@@ -4,18 +4,6 @@
     padding: 40px 0 20px;
     font-size: 18px;
 
-    &__wrapper {
-        @include media(mobile) {
-            @include flex(flex, column, center, center, left);
-        }
-        @include media(tablet) {
-            @include flex(flex, column, center, flex-start, left);
-        }
-        @include media(desktop) {
-            @include flex(flex, row, space-around, center, left);
-        }
-    }
-
     &__title {
         font-size: 30px;
     }

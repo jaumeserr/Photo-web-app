@@ -4,15 +4,9 @@
     @include flex(flex, column, center, center, center);
     padding: 20px 0;
 
-    &__wrapper {
-        @include media(mobile) {
-            @include flex(flex, column, center, center, left);
-        }
+    &__container {
         @include media(tablet) {
             @include flex(flex, column, center, center, left);
-        }
-        @include media(desktop) {
-            @include flex(flex, row, space-around, center, left);
         }
     }
     
