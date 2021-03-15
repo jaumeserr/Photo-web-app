@@ -10,10 +10,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            Menu
+    <header class="navbar wrapper">
+        <nav class="navbar__container">
+            <h1 class="navbar__logo">Gamma</h1>
+            <ul class="navbar__menu">
+                <li class="navbar__menu-items"><a href="./index.html">Home</a></li>
+                <li class="navbar__menu-items"><a href="./about.html">About</a></li>
+                <li class="navbar__menu-items"><a href="./contact.html">Contact</a></li>
+            </ul>
         </nav>
+        <div class="navbar__responsive">
+            <div class="navbar__responsive-container">
+                <input type="checkbox" />
+                <span class="navbar__responsive-line"></span>
+                <span class="navbar__responsive-line"></span>
+                <span class="navbar__responsive-line"></span>
+                <nav class="navbar__responsive-menu">
+                    <ul class="navbar__responsive-list">
+                        <li class="navbar__responsive-list-items"><a href="./index.html">Home</a></li>
+                        <li class="navbar__responsive-list-items"><a href="./about.html">About</a></li>
+                        <li class="navbar__responsive-list-items"><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <main>
