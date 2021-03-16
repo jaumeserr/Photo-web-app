@@ -346,7 +346,7 @@
 }
 
 .hero {
-  background-image: url("../assets/site_showcase_bg.jpg");
+  background-image: url("../../../assets/site_showcase_bg.jpg");
   color: #fff;
 }
 
@@ -791,12 +791,13 @@ body {
 }
 
 .contact .card {
-  margin: 0px;
+  margin: 20px 0 0;
+  width: 100%;
 }
 
 @media (min-width: 1200px) {
   .contact .card {
-    margin: 0 0 0 30px;
+    margin: 0 0 0 20px;
   }
 }
 
