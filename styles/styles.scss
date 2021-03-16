@@ -48,7 +48,6 @@ body {
 }
 
 .cards {
-    @include media(mobile) { width: 100%; }
     &__container {
         padding: 30px 0;
         @include media(tablet) {
@@ -62,15 +61,29 @@ body {
 }
 
 .about {
-    display: flex;
-    padding: 30px 0;
-}
-
-.left {
-    flex: 4;
-}
-.right {
-    margin-left: 30px;
-    flex: 1;
-    background-color: red;
+    &__container {
+        padding: 30px 0;
+        @include media(desktop) {
+            @include flex(flex, row, center, flex-start, left);
+        }
+    }
+    .card {
+        margin: 20px 0 0;
+        width: 100%;
+        @include media(desktop) {
+            margin: 0 0 0 20px;
+        }
+    }
+    &__left {
+        flex: 2;
+        &-title{
+            padding-top: 20px;
+        }
+        &-text {
+            padding: 10px 0;
+        }
+    }
+    &__right {
+        flex: 1;    
+    }
 }
