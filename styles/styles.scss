@@ -75,9 +75,10 @@ body {
         flex: 1;
     }
     .card {
-        margin: 0px;
+        margin: 20px 0 0;
+        width: 100%;
         @include media(desktop) {
-            margin: 0 0 0 30px;
+            margin: 0 0 0 20px;
         }
         @include media(tablet) {
             width: 100%;
