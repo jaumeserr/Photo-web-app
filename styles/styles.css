@@ -734,6 +734,12 @@ body {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+  .about .card {
+    width: 100%;
+  }
+}
+
 .about__left {
   -webkit-box-flex: 2;
       -ms-flex: 2;
