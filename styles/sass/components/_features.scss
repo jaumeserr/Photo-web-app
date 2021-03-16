@@ -1,18 +1,24 @@
 .features {
     background-color: $green-color;
     color: $white-color;
-    padding: 40px 0 20px;
+    padding: 20px 0;
     font-size: 18px;
-
+    &__container {
+        @include flex(flex, column, center, center, left);
+        @include media(tablet) {
+            @include flex(flex, column, center, flex-start, left);
+        }
+        @include media(desktop) {
+            @include flex(flex, row, space-around, center, left);
+        }
+    }
     &__title {
         font-size: 30px;
     }
-
     &__points {
         padding: 10px 0;
         font-weight: 700;
-
-        &__item {
+        &-item {
             padding: 5px 0;
             &::before {
                 content: "✓";

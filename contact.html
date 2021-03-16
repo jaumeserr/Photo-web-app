@@ -10,10 +10,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            Menu
+    <header class="navbar wrapper">
+        <nav class="navbar__container">
+            <h1 class="navbar__logo">Gamma</h1>
+            <ul class="navbar__menu">
+                <li class="navbar__menu-items"><a href="./index.html">Home</a></li>
+                <li class="navbar__menu-items"><a href="./about.html">About</a></li>
+                <li class="navbar__menu-items"><a href="./contact.html">Contact</a></li>
+            </ul>
         </nav>
+        <div class="navbar__responsive">
+            <div class="navbar__responsive-container">
+                <input type="checkbox" />
+                <span class="navbar__responsive-line"></span>
+                <span class="navbar__responsive-line"></span>
+                <span class="navbar__responsive-line"></span>
+                <!-- <nav class="navbar__responsive-menu">
+                    <ul class="navbar__responsive-list">
+                        <li class="navbar__responsive-list-items"><a href="./index.html">Home</a></li>
+                        <li class="navbar__responsive-list-items"><a href="./about.html">About</a></li>
+                        <li class="navbar__responsive-list-items"><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav> -->
+            </div>
+        </div>
     </header>
     
     <main>
@@ -51,29 +71,28 @@
         </section>
         
         <section class="features">
-            <div class="wrapper">
+            <div class="features__container wrapper">
                 <div class="features__list">
                     <h2 class="features__title">Gamma Features</h2>
                     <ul class="features__points">
-                        <li class="features__points__item">harlatanistic</li>
-                        <li class="features__points__item">unembattled</li>
-                        <li class="features__points__item">bleekbok</li>
-                        <li class="features__points__item">overtipple</li>
-                        <li class="features__points__item">empathically</li>
+                        <li class="features__points-item">harlatanistic</li>
+                        <li class="features__points-item">unembattled</li>
+                        <li class="features__points-item">bleekbok</li>
+                        <li class="features__points-item">overtipple</li>
+                        <li class="features__points-item">empathically</li>
                     </ul>
                 </div>
                 <img class="features__logo" src="./assets/logo.png">
             </div>
         </section>
     </main>
-    
     <footer class="footer">
-        <div class="wrapper footer__container">
+        <div class="footer__container wrapper">
             <ul class="footer__menu">
-                <li class="footer__menu__item"><a href="./index.html">Home</a></li>
-                <li class="footer__menu__item"><a href="./about.html">About</a></li>
-                <li class="footer__menu__item"><a href="./contact.html">Contact</a></li>
-                <li class="footer__menu__item"><a href="#">Privacy Policy</a></li>
+                <li class="footer__menu-item"><a href="./index.html">Home</a></li>
+                <li class="footer__menu-item"><a href="./about.html">About</a></li>
+                <li class="footer__menu-item"><a href="./contact.html">Contact</a></li>
+                <li class="footer__menu-item"><a href="#">Privacy Policy</a></li>
             </ul>
             <p class="footer__trademark">Privacy Policy &#64; 2021, All Rights Reserved</p>
         </div>

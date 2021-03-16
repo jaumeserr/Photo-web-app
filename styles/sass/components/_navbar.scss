@@ -1,7 +1,6 @@
 .navbar {
     @include flex(flex, row, space-between, center, left);
     height: 61px;
-    
     &__container {
         @include flex(flex, row, flex-start, center, left);
     }

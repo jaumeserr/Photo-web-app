@@ -2,20 +2,14 @@
     @include border(1px, solid, $lightgray-color);
     border-radius: 5px;
     padding: 15px 15px 20px 15px;
-    margin: 10px;
-
-    // @include media(tablet) {
-    //     width: 46%;
-    // }
-
-    // &__image {
-    //     width: 100%;
-    // }
-
+    margin: 20px 10px;
+    @include media(tablet) { width: 46%; }
+    &__image {
+        width: 100%;
+    }
     &__title {
         margin-top: 25px;
     }
-
     &__text {
         padding: 15px 0;
     }    
