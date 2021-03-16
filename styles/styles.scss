@@ -1,0 +1,86 @@
+@import './sass/global/button';
+@import './sass/global/colors';
+@import './sass/global/fonts';
+@import './sass/global/mixins';
+@import './sass/global/reset';
+@import './sass/global/vars';
+@import './sass/global/wrapper';
+
+@import './sass/components/footer';
+@import './sass/components/features';
+@import './sass/components/headings';
+@import './sass/components/card';
+@import './sass/components/form';
+@import './sass/components/accordion';
+@import './sass/components/hero';
+@import './sass/components/navbar';
+
+body {
+    font-family: $primary-font;  
+}
+
+.cards {
+    &__container {
+        padding: 30px 0;
+        @include media(tablet) {
+            @include flex(flex, row, space-between, flex-start, left);
+            flex-wrap: wrap;
+        }
+        @include media(desktop) {
+            @include flex(flex, row, space-between, flex-start, left);
+        }    
+    }
+}
+
+.about {
+    &__container {
+        padding: 30px 0;
+        @include media(desktop) {
+            @include flex(flex, row, center, flex-start, left);
+        }
+    }
+    .card {
+        margin: 20px 0 0;
+        width: 100%;
+        @include media(desktop) {
+            margin: 0 0 0 20px;
+        }
+    }
+    &__left {
+        flex: 2;
+        &-title{
+            padding-top: 20px;
+        }
+        &-text {
+            padding: 10px 0;
+        }
+    }
+    &__right {
+        flex: 1;    
+    }
+}
+
+.contact {
+    &__container {
+        padding: 30px 0;
+        @include media(desktop) {
+            @include flex(flex, row, center, flex-start, left);
+        }
+    }
+    &__left {
+        padding-bottom: 30px;
+        flex:2;
+    }
+    &__right {
+        flex: 1;
+    }
+    .card {
+        margin: 0px;
+        @include media(desktop) {
+            margin: 0 0 0 30px;
+        }
+        @include media(tablet) {
+            width: 100%;
+        }
+    }
+}

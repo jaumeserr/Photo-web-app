@@ -1,0 +1,87 @@
+.button {
+  background-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e8e8e8;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #e8e8e8;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #00B09B;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 92%;
+  }
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__label {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.form__input, .form__textarea {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #e8e8e8;
+  padding: 10px;
+  color: gray;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.form__input::-webkit-input-placeholder, .form__textarea::-webkit-input-placeholder {
+  color: gray;
+}
+
+.form__input:-ms-input-placeholder, .form__textarea:-ms-input-placeholder {
+  color: gray;
+}
+
+.form__input::-ms-input-placeholder, .form__textarea::-ms-input-placeholder {
+  color: gray;
+}
+
+.form__input::placeholder, .form__textarea::placeholder {
+  color: gray;
+}
+
+.button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+/*# sourceMappingURL=form.css.map */

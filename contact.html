@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Web App - Home</title>
+    <title>Photo Web App - Contact</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
@@ -35,48 +35,40 @@
             </div>
         </div>
     </header>
+    
     <main>
-        <section class="hero">
-            <div class="hero__container wrapper">
-                <div class="hero__info">
-                    <h2 class="hero__info-title">Capture <span class="hero__info-title--green">Life</span></h2>
-                    <p class="hero__info-text">A fun and easy way to capture & share the moments you live for</p>
-                    <div class="hero__info-apps">
-                        <img src="./assets/icon_app_store.png" />
-                        <img src="./assets/icon_google_play.png" />
-                    </div>
-                </div>
-                <div class="hero__image">
-                    <img src="./assets/site_phone.png" />
-                </div>  
+        <section class="heading">
+            <div class="wrapper">
+                <h2 class="heading__title">Contact Us</h2>
             </div>
         </section>
-        <section class="cards wrapper">
-            <div class="cards__container">
-                <div class="card">
-                    <img class="card__image" src="../../assets/demo3.jpg">
-                    <div>
-                        <h3 class="card__title">Lorem Ipsum</h3>
-                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione recusandae laboriosam debitis ipsum incidunt cumque magni modi omnis aperiam ut, itaque sit sint obcaecati necessitatibus nostrum, reprehenderit distinctio quibusdam! Sequi.</p>
-                        <button class="button">Read More</button>
+        <section class="contact wrapper">
+            <div class="contact__container">
+                <section class="contact__left">
+                    <form class="form">
+                        <label class="form__label" for="name">Name</label>
+                        <input class="form__input" type="text" id="name" placeholder="Enter name" />
+                        <label class="form__label" for="company">Company name</label>
+                        <input class="form__input" type="text" id="company" placeholder="Enter company name" />
+                        <label class="form__label" for="email">Email address</label>
+                        <input class="form__input" type="email" id="email" placeholder="Enter Email" />
+                        <label class="form__label" for="message">Message</label>
+                        <textarea class="form__textarea" id="message" placeholder="Enter Message"></textarea>
+                        <button class="button">Submit</button>
+                    </form>
+                </section>
+                <section class="contact__right">
+                    <div class="card">
+                        <figure>
+                            <img class="card__image" src="../../assets/demo1.png">
+                        </figure>
+                        <div>
+                            <h3 class="card__title">Lorem Ipsum</h3>
+                            <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione recusandae laboriosam debitis ipsum incidunt cumque magni modi omnis aperiam ut, itaque sit sint obcaecati necessitatibus nostrum, reprehenderit distinctio quibusdam! Sequi.</p>
+                            <button class="button">Read More</button>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img class="card__image" src="../../assets/demo2.jpg">
-                    <div>
-                        <h3 class="card__title">Lorem Ipsum</h3>
-                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione recusandae laboriosam debitis ipsum incidunt cumque magni modi omnis aperiam ut, itaque sit sint obcaecati necessitatibus nostrum, reprehenderit distinctio quibusdam! Sequi.</p>
-                        <button class="button">Read More</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card__image" src="../../assets/demo3.jpg">
-                    <div>
-                        <h3 class="card__title">Lorem Ipsum</h3>
-                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione recusandae laboriosam debitis ipsum incidunt cumque magni modi omnis aperiam ut, itaque sit sint obcaecati necessitatibus nostrum, reprehenderit distinctio quibusdam! Sequi.</p>
-                        <button class="button">Read More</button>
-                    </div>
-                </div>
+                </section>
             </div>
         </section>
         <section class="features">

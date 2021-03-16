@@ -1,0 +1,24 @@
+.footer {
+    background-color: $gray-color;
+    color: $white-color;
+    @include flex(flex, column, center, center, center);
+    padding: 20px 0;
+    &__container {
+        @include media(desktop) {
+            @include flex(flex, row, space-between, center, left);
+        }
+    }
+    &__menu {
+        @include flex(flex, row, center, center, center);
+        flex-wrap: wrap;
+        &-item {
+            padding: 0 7px;
+        }
+    }
+    &__trademark {
+        padding-top: 20px;
+            @include media(desktop) {
+            padding-top: 0;
+        }
+    }
+}

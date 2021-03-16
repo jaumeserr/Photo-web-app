@@ -1,0 +1,33 @@
+@import './vars';
+
+@mixin flex($display, $direction, $justify, $align, $text-align) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    text-align: $text-align;
+}
+
+@mixin border($width, $style, $color) {
+    border-width: $width;
+    border-style: $style;
+    border-color: $color;
+}
+
+@mixin media($media) {
+    @if $media == mobile {
+        @media (max-width: $tablet-size) {
+            @content;
+        }
+    }
+    @else if $media == tablet {
+        @media (min-width: $tablet-size) and (max-width: $desktop-size) {
+            @content; 
+        }
+    }
+    @else if $media == desktop {
+        @media (min-width: $desktop-size) {
+            @content;
+        }
+    }
+}

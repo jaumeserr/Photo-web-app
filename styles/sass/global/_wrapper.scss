@@ -1,0 +1,10 @@
+@import './mixins';
+
+.wrapper {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    @include media(mobile) {
+        width: 92%;
+    }
+}

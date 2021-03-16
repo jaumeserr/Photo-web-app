@@ -1,0 +1,36 @@
+@import '../../../styles/sass/colors';
+@import '../../../styles/sass/fonts';
+@import '../../../styles/sass/mixins';
+@import '../../../styles/sass/reset';
+@import '../../../styles/sass/vars';
+
+.footer {
+    background-color: $gray-color;
+    color: $white-color;
+    @include flex(flex, column, center, center, center);
+    padding: 20px;
+    
+    &__menu {
+        @include flex(flex, row, center, center, center);
+        flex-wrap: wrap;
+        
+        &__item {
+            padding: 0 7px;
+        }
+    }
+    
+    &__trademark {
+        padding-top: 20px;
+    }
+}
+
+@media all and (min-width: $desktop-size) {
+    .footer {
+        @include flex(flex, row, space-around, center, center);
+        
+        &__trademark {
+            padding-top: 0;
+            
+        }
+    }
+}
