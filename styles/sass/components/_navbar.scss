@@ -6,11 +6,8 @@
     }
     &__logo {
         color: $green-color;
-        padding: 0 15px;
+        padding: 0 15px 0 0;
         font-size: 22px;
-        @include media(desktop) {
-            padding: 0 15px 0 0;
-        }
     }
     &__menu {
         @include flex(flex, row, flex-start, center, left);

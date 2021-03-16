@@ -19,34 +19,6 @@ body {
     font-family: $primary-font;  
 }
 
-.contact {
-    display: flex;
-    flex-direction: column;
-    padding: 30px 0;
-    @include flex(flex, column, center, stretch, left);
-    
-    @include media(desktop) {
-        @include flex(flex, row, space-around, flex-start, left);
-    }
-
-    @include media(tablet) {
-        @include flex(flex, row, space-around, flex-start, left);
-    }
-
-    &__form {
-        padding-bottom: 30px;
-        flex-grow:6;
-    }
-
-    &__card {
-        flex-grow: 1;
-    }
-
-    .card {
-        margin: 0px;
-    }
-}
-
 .cards {
     &__container {
         padding: 30px 0;
@@ -85,5 +57,30 @@ body {
     }
     &__right {
         flex: 1;    
+    }
+}
+
+.contact {
+    &__container {
+        padding: 30px 0;
+        @include media(desktop) {
+            @include flex(flex, row, center, flex-start, left);
+        }
+    }
+    &__left {
+        padding-bottom: 30px;
+        flex:2;
+    }
+    &__right {
+        flex: 1;
+    }
+    .card {
+        margin: 0px;
+        @include media(desktop) {
+            margin: 0 0 0 30px;
+        }
+        @include media(tablet) {
+            width: 100%;
+        }
     }
 }
