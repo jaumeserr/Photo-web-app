@@ -45,6 +45,9 @@ body {
         @include media(desktop) {
             margin: 0 0 0 20px;
         }
+        @include media(tablet) {
+            width: 100%;
+        }
     }
     &__left {
         flex: 2;
