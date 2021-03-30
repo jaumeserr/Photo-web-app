@@ -1,4 +1,4 @@
-# Photo-web-app
+# Photo-web-app WebSite
 Exercise based on creating a webpage with 3 sections.
 The webpage is *mobile first* (less than 768px) and then it goes to tablet size (less than 1200px) and desktop size.
 
@@ -13,6 +13,7 @@ The webpage is *mobile first* (less than 768px) and then it goes to tablet size 
 
 
 
+---
 ---
 ### Project screenshots
 #### Home Page:
